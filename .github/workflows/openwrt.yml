@@ -38,6 +38,9 @@ jobs:
       - name: Install Helloword
         run: |
           echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default 
+      - name: Install Passwall
+        run: |
+          echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> ./feeds.conf.default
       - name: Install OpenClash
         run: |
           mkdir package/luci-app-openclash
